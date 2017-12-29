@@ -1,0 +1,20 @@
+<!--pages/user/user.wxml-->
+<view class="user_head">
+  <image src="{{imgpath}}user_head_bg.jpg"  mode='widthFix'></image>
+  <view class='nickface'>
+    <image src="{{userinfo.facelink}}" ></image>
+  </view>
+  <view class='nickname'>{{userinfo.nickname}}</view>
+</view>
+<view class="Personal">
+  <navigator class="PersonalLi register" url="/pages/personal/myregister/myregister"  open-type="navigate">我的预约</navigator>
+  <navigator class="PersonalLi coupon" url="/pages/personal/coupon/coupon" open-type="navigate">我的代金券</navigator>
+  <navigator class="PersonalLi message" url="/pages/personal/mymsg/mymsg" open-type="navigate">我的消息</navigator>
+  <navigator class="PersonalLi share" url="/pages/share/share" open-type="navigate">分享给小伙伴</navigator>
+  <view class="PersonalLi customer_service" bindtap='onMakePhone'>
+    客服电话
+    <view class='tel'>400-060-1992</view>
+  </view>
+</view>
+<import src="/pages/Template/zx_right.wxml"/>
+<template is="zx_right" data=""/>

@@ -1,0 +1,15 @@
+/* pages/user/login/login.wxss */
+page{background-color: #fff;}
+.Myfrom{width: 80%;margin: 40rpx auto;}
+.Myfrom .form-text{border-bottom: #eeeeee solid 1px;height: 80rpx;line-height: 80rpx;margin: 10rpx auto;padding-left: 70rpx;background-position:left center;background-repeat: no-repeat;background-size:auto 90% ;}
+.Myfrom .form-text.phone{background-image: url(http://hfyx.yzw0525.com/images/icon/icon_phone.png);}
+.Myfrom .form-text.password{background-image: url(http://hfyx.yzw0525.com/images/icon/icon_password.png);}
+.Myfrom .form-text input{width: 100%;height: 100%;}
+
+.form-submit{width: 60%;height: 90rpx;line-height: 90rpx;border-radius: 40rpx;border: none;background-color: #937343;font-size: 32rpx;color: #fff;letter-spacing: 15rpx;}
+
+.reset{width: 60%;text-align: right;color: #888;margin: 10rpx auto;}
+.reset_url{display: inline-block;}
+
+.register{position: fixed;bottom: 50rpx;width: 100%;text-align: center;}
+.register .register_url{display: inline-block;color: #937343;}

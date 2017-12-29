@@ -1,0 +1,8 @@
+/* pages/user/interest/interest.wxss */
+page{background-color: #fff;}
+.activity_content {margin-bottom: 110rpx;}
+.activity_content .title{color: #937343;font-size: 30rpx; padding-left: 10rpx;}
+.activity_content .content{padding: 0 3% 20rpx;font-size: 28rpx;line-height: 40rpx;color: #666;}
+
+.btn_receive{width: 61.3%;margin: 15px auto;background-color: #937343;color: #fff;font-size: 32rpx;height: 90rpx;line-height:90rpx;letter-spacing: 2px;text-align: center;display: block;position: relative;padding-left: 60rpx;border-radius: 10rpx;}
+.btn_receive::before{content: "";display: block;width: 70rpx;height: 70rpx;position: absolute;top: 50%;left: 50%;margin-top:-32rpx;margin-left: -100rpx;background-image: url(https://hfyx.yzw0525.com/images/icon/btn_receive.png);background-position: center;background-size: auto 100%;background-repeat: no-repeat;}

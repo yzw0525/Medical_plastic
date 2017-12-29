@@ -1,0 +1,26 @@
+<!--pages/project/project.wxml-->
+<import src="/pages/Template/projectType.wxml"/>
+<template is="projectType" data=""/>
+<view class='main project'>
+  <block wx:for="{{project_list}}" wx:for-item="projectlist" wx:for-index="projectindex" wx:key="*.this">
+  <navigator url='/pages/project/projectinfos/projectinfos?projectid={{projectlist.id}}' class='project_li clear' >
+    <view class='project-image'>
+      <image src='{{projectlist.pic_list}}' mode='widthFix'></image>
+    </view>
+    <view class='project-content'>
+      <view class='project-title'>{{projectlist.title}}</view>
+      <view class='label'>{{projectlist.is_recommend==1?'爆款推荐':'预约专享'}}</view>
+      <view>
+        <view class='price'>￥{{projectlist.price}}</view>
+        <view class='register_num'>{{projectlist.clicks}}人预约</view>
+      </view>
+    </view>
+  </navigator>
+  </block>
+  <!-- project_li end -->
+  <view bindtap="onLoadMoreDoctList" wx:if="{{is_more}}" class="load_more">查看更多</view>
+  <view wx:else class="loadnull"><text>暂无数据</text></view>
+</view>
+<!-- project end -->
+<import src="/pages/Template/zx_right.wxml"/>
+<template is="zx_right" data=""/>

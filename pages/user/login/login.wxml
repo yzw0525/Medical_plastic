@@ -1,0 +1,15 @@
+<!--pages/user/login/login.wxml-->
+<image src='{{imgpath}}login_head.jpg' mode='widthFix'></image>
+<form bindsubmit="MyfromSubmit" report-submit="true">
+  <view class="Myfrom clear">
+    <view class="form-text phone">
+      <input type="text" placeholder="请输入您的手机号码" name="phone" maxlength="16" />
+    </view>
+    <view class="form-text password">
+      <input type="text" password placeholder="请输入您的密码" name="password" confirm-type="go" maxlength="16" />
+    </view>
+  </view>
+  <button class='form-submit' loading="{{loading}}" form-type="submit"> 登 录 </button>
+  <view class='reset'><navigator url='/pages/user/reset/reset' hover-class='none' class='reset_url'>忘记密码？</navigator></view>
+  <view class='register'>还没有账号? <navigator url='/pages/user/register/register' hover-class='none' class='register_url'>立即注册</navigator></view>
+</form>

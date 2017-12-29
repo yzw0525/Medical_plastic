@@ -1,0 +1,8 @@
+/* pages/recommend/recommend.wxss */
+.project_li{width: 100%; padding: 10rpx 3% 20rpx;border-bottom:solid #eeeeee 1px;border-radius: 10rpx;margin:10rpx auto;}
+.project_li .project-image{width: 220rpx;height: 220rpx;border-radius: 10rpx;overflow: hidden;float: left;}
+.project_li .project-content{padding-left: 235rpx;height: 220rpx; position:relative;}
+.project_li .project-title{font-size: 30rpx;color: #333;line-height: 40rpx;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;}
+.project_li .label{display: inline-block;line-height: 40rpx;padding: 0 10rpx;color: #937343;border:solid 1px #937343;border-radius:5rpx;position: absolute;left:240rpx;bottom: 50rpx;}
+.project_li .price,.project_li .register_num{width: 50%;line-height: 40rpx;font-size: 28rpx;float: left;color: #937343;position: absolute;left:240rpx;bottom: 0rpx;}
+.project_li .register_num{float: right;color: #aaa;text-align: right;right:0;left: unset;}

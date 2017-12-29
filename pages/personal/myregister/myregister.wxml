@@ -1,0 +1,19 @@
+<!--pages/Personal/myregister/myregister.wxml-->
+<view wx:for="{{register_list}}" wx:for-item="list" wx:for-index="index" wx:key="*.this" class='myregister_li clear'>
+  <view class="time-state {{list.is_to_hospital > 0 ? 'invalid' : ''}}">
+    <view class='state' wx:if="{{list.is_to_hospital==0}}" >预约中</view>
+    <view class='state' wx:if="{{list.is_to_hospital==1}}" >已就诊</view>
+    <view class='state' wx:if="{{list.is_to_hospital==2}}" >已取消</view>
+    <view class='state' wx:if="{{list.is_to_hospital==3}}" >已过期</view>
+    <view class='time'><view class='label'>就诊时间：</view>{{list.yydate}}</view>
+    <view class='cancel' bindtap='onCancelMyRegister' data-rid='{{list.id}}' data-listindex='{{index}}' wx:if="{{list.is_to_hospital==0}}">取消预约</view>
+  </view>
+  <view class='name'><view class='label'>就诊人：</view> {{list.patients}}</view>
+  <view class='tel'><view class='label'>联系方式：</view>{{list.tel}}</view>
+  <view class='projbect'><view class='label'>预约项目：</view>{{list.typename}}</view>
+  <view class='doctor'><view class='label'>预约专家：</view>{{list.doctorname}}</view>
+</view>
+<!-- myregister_li end -->
+<view wx:if="{{!is_more}}"  class="loadnull"><text class='f5'>暂无数据</text></view>
+<import src="/pages/Template/zx_right.wxml"/>
+<template is="zx_right" data=""/>

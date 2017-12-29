@@ -1,0 +1,8 @@
+/* pages/Personal/myregister/myregister.wxss */
+.myregister_li{width: 94%; background-color: #fff;margin:20rpx auto 0;padding-bottom: 20rpx;}
+.myregister_li .time-state{background-color: #937343;color: #fff;padding: 15rpx 40rpx;margin-bottom: 15rpx;position: relative;}
+.myregister_li .time-state.invalid{background-color: #c2c2c2;}
+.myregister_li .time-state .state{font-size: 30rpx;}
+.myregister_li .time-state .cancel{padding: 0 10rpx;line-height: 50rpx;font-size: 28rpx; background-color: #fff;color: #937343; position: absolute;right: 20rpx;top: 50%;margin-top: -25rpx;border-radius: 10rpx;}
+.myregister_li>view{padding:0 40rpx;line-height: 50rpx;font-size: 28rpx;color: #333;}
+.myregister_li .label{display: inline-block;width: 150rpx;}

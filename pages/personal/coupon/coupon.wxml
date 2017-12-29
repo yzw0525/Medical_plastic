@@ -1,0 +1,36 @@
+<!--pages/Personal/coupon/coupon.wxml-->
+<view class='coupon_head'>
+  <view bindtap='setStateType' data-state_type='not' class="not {{state_type=='not'?'active':''}}">未使用</view>
+  <view bindtap='setStateType' data-state_type='already' class="already {{state_type=='already'?'active':''}}">已使用</view>
+  <view bindtap='setStateType' data-state_type='overdue' class="overdue {{state_type=='overdue'?'active':''}}">已过期</view>
+</view>
+<view class='coupon_list' wx:if="{{coupon_list[0] !== undefined}}" >
+  <view class='coupon_li' wx:for="{{coupon_list}}" wx:for-item="list" wx:for-index="index" wx:key="*.this" >
+    <view class='c_title'>{{list.coupon_title}}</view>
+    <view class='c_attribute clear'>
+      <view class='c_date'>有效期:{{list.start_date}}至{{list.end_date}}</view>
+      <view class='c_price'>￥{{list.price}}</view>
+    </view>
+    <view class='c_rule'>
+      <view class='c_r_head' bindtap='onFoldMenu' data-foldindex='{{index}}'>
+        代金券使用规则 
+        <icon class='down' wx:if="{{foldindex!==index}}"></icon>  
+        <icon class='up' wx:else></icon>
+      </view>
+      <view class="c_state {{state_type}}">
+        {{state_type=='not'?'未使用':''}}
+        {{state_type=='already'?'已使用':''}}
+        {{state_type=='overdue'?'已过期':''}}
+      </view>
+    </view>
+    <view class='c_r_content' wx:if="{{foldindex===index}}" animation="{{ foldindex == index ? animationFold : ''}}">
+      <import src="../../Common/wxParse/wxParse.wxml"/>
+      <template is="wxParse" data="{{wxParseData:foldcontent.nodes}}"/>
+    </view>
+  </view>
+  <!-- coupon_li end -->
+  
+</view>
+<view wx:else class='coupon_null'></view>
+<import src="/pages/Template/zx_right.wxml"/>
+<template is="zx_right" data=""/>

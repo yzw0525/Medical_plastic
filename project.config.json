@@ -1,0 +1,161 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.7.0",
+	"appid": "wxf81b50ba006f6f32",
+	"projectname": "%E5%90%88%E8%82%A5%E8%89%BA%E5%85%B4%E5%8C%BB%E7%96%97",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "项目",
+					"pathName": "pages/project/project",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "搜索",
+					"pathName": "pages/search/search",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "会员权益",
+					"pathName": "pages/user/rights/rights",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "邀请会员",
+					"pathName": "pages/activity/invitation/invitation",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "关于艺星",
+					"pathName": "pages/about/about",
+					"query": ""
+				},
+				{
+					"id": 5,
+					"name": "预约",
+					"pathName": "pages/online/online",
+					"query": "projectType=935"
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/personal/personal",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "专家",
+					"pathName": "pages/doct/doctlist/doctlist",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "专家案例",
+					"pathName": "pages/case/case",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "爆款推荐",
+					"pathName": "pages/recommend/recommend",
+					"query": ""
+				},
+				{
+					"id": 10,
+					"name": "项目详情",
+					"pathName": "pages/project/projectinfos/projectinfos",
+					"query": "projectid=1427"
+				},
+				{
+					"id": -1,
+					"name": "分享详情",
+					"pathName": "pages/share/share",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的消息",
+					"pathName": "pages/personal/mymsg/mymsg",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的预约",
+					"pathName": "pages/personal/myregister/myregister",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的代金券",
+					"pathName": "pages/personal/coupon/coupon",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "登录",
+					"pathName": "pages/user/login/login",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "注册",
+					"pathName": "pages/user/register/register",
+					"query": ""
+				},
+				{
+					"id": 17,
+					"name": "案例详情",
+					"pathName": "pages/case/caseinfos/caseinfos",
+					"query": "caseid=1415"
+				},
+				{
+					"id": 18,
+					"name": "专家详情",
+					"pathName": "pages/doct/doctinfo/doctinfo",
+					"query": "doctorid=1412"
+				},
+				{
+					"id": -1,
+					"name": "授权",
+					"pathName": "pages/user/authorization/authorization",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "活动详情",
+					"pathName": "pages/activity/details/details",
+					"query": "aid=10"
+				},
+				{
+					"id": 21,
+					"name": "权益详情",
+					"pathName": "pages/user/interest/interest",
+					"query": "aid=10"
+				}
+			]
+		}
+	}
+}

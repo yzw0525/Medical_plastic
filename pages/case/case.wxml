@@ -1,0 +1,22 @@
+<!--pages/case/case.wxml-->
+<import src="/pages/Template/projectType.wxml"/>
+<template is="projectType" data=""/>
+<view class='main case'>
+  <view class='case_body'>
+    <view class='case_li clear' wx:for="{{case_list}}" wx:for-item="caselist" wx:for-index="caseindex" wx:key="*.this">
+      <navigator url='/pages/case/caseinfos/caseinfos?caseid={{caselist.id}}' hover-class='none' class='case-image'>
+        <view class='img-l'><label>术前</label><image src='{{caselist.cover_front}}' mode='widthFix'></image></view>
+        <view class='img-r'><label>术前</label><image src='{{caselist.cover_after}}' mode='widthFix'></image></view>
+      </navigator>
+      <navigator url='/pages/case/caseinfos/caseinfos?caseid={{caselist.id}}' hover-class='none' class='case-title'>{{caselist.case_title}}</navigator>
+      <view class='times'><label style="margin-right:15rpx;">手术时间</label>{{caselist.operation_time}}</view>
+      <view class='read_num clear'>{{caselist.clicks}}</view>
+    </view>
+    <!-- case_li end -->
+  </view>
+  <!-- case_body end -->
+</view>
+<!-- case end -->
+<view wx:if="{{!is_more}}" class="loadnull"><text class='f5'>暂无更多案例</text></view>
+<import src="/pages/Template/zx_right.wxml"/>
+<template is="zx_right" data=""/>

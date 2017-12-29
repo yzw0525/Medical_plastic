@@ -1,0 +1,63 @@
+<!--pages/user/rights/rights.wxml-->
+<image src='{{imgpath}}rights_banner.jpg' mode='widthFix'></image>
+<view class='main exclusive'>
+  <view class='title'>
+    专属权益
+    <view class="describe">｜ 优惠福利，乐享不停</view>
+  </view>
+  <view class='exclusive_box'>
+    <navigator url="/pages/user/interest/interest?aid=1" hover-class='none' open-type='navigate' class='exclusive_lattice experience'>
+      <view class='title'>新品体验</view>
+      <view class="describe">新品上市优惠体验</view>
+    </navigator>
+    <navigator url="/pages/user/interest/interest?aid=3" hover-class='none' open-type='navigate' class='exclusive_lattice coffee'>
+      <view class='title'>免费咖啡</view>
+      <view class="describe">欢乐畅饮</view>
+    </navigator>
+    <navigator url="/pages/user/interest/interest?aid=4" hover-class='none' open-type='navigate' class='exclusive_lattice testing'>
+      <view class='title'>免费皮肤检测</view>
+      <view class="describe">了解皮肤状况</view>
+    </navigator>
+    <navigator url="/pages/user/interest/interest?aid=5" hover-class='none' open-type='navigate' class='exclusive_lattice birthday'>
+      <view class='title'>生日礼包</view>
+      <view class="describe">生日福利 精彩礼遇</view>
+    </navigator>
+    <navigator url="/pages/user/interest/interest?aid=6" hover-class='none' open-type='navigate' class='exclusive_lattice discount'>
+      <view class='title'>亲友折扣</view>
+      <view class="describe">优惠升级</view>
+    </navigator>
+    <navigator url="/pages/user/interest/interest?aid=7" hover-class='none' open-type='navigate' class='exclusive_lattice lunch'>
+      <view class='title'>免费午餐</view>
+      <view class="describe">畅享美食</view>
+    </navigator>
+    <navigator url="/pages/user/interest/interest?aid=8" hover-class='none' open-type='navigate' class='exclusive_lattice parking'>
+      <view class='title'>免费停车泊车</view>
+      <view class="describe">专业司机停车无忧</view>
+    </navigator>
+    <navigator url="/pages/user/interest/interest?aid=9" hover-class='none' open-type='navigate' class='exclusive_lattice shuttle'>
+      <view class='title'>专车接送</view>
+      <view class="describe">尊享叫车及接送</view>
+    </navigator>
+    <navigator url="/pages/user/interest/interest?aid=10" hover-class='none' open-type='navigate' class='exclusive_lattice referral'>
+      <view class='title'>医院转诊治疗</view>
+      <view class="describe">倾心享受便利服务</view>
+    </navigator>
+  </view>
+</view>
+<view class='main activity'>
+  <view class='title'>
+    热门活动
+    <view class="describe">｜ 吃喝玩乐，美丽随行</view>
+  </view>
+  <!--title end -->
+  <block wx:for="{{activity_list}}" wx:for-item="activity_list" wx:for-index="activity_index" wx:key="*.this" >
+  <navigator url="/pages/activity/details/details?aid={{activity_list.id}}" hover-class='none' open-type='navigate' class='activity_list'>
+    <image src='{{activity_list.litpic}}' mode='widthFix'></image>
+    <view class='title'>
+      {{activity_list.title}}
+      <view class="describe">{{activity_list.subtitle}}</view>
+    </view>
+  </navigator>
+  <!--activity_list end -->
+  </block>
+</view>

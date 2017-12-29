@@ -1,0 +1,5 @@
+<!--zxzx_right-->
+<template name="zx_right">
+  <button open-type="contact" class="zx_right">在线咨询</button>
+</template>
+<!--zx_right end-->

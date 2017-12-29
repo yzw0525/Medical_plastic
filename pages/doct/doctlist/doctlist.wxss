@@ -1,0 +1,16 @@
+/* doctlist.wxss */
+.doctlist{width: 100%;margin: 10rpx auto 5rpx;background-color: #fff;padding:0 3% 10rpx;}
+
+.doct-li{width: 100%; margin: 10rpx auto 5rpx;padding: 20rpx 15rpx; float: left;border: #eeeeee solid 1px;border-radius: 15rpx;}
+.doct-li .d-l-face{width: 240rpx;height: 300rpx;overflow:hidden;float: left;}
+.doct-li .d-l-body{padding-left: 250rpx;height: 300rpx;}
+.doct-li .d-l-body .d-l-b-head{height:60rpx;line-height: 60rpx;color: #333;box-sizing: border-box;}
+.d-l-b-head .d-l-b-h-name{float: left;padding: 0 5px;font-size: 46rpx;text-transform:uppercase; }
+.d-l-b-head .d-l-b-h-shorttitle{float: left;padding: 0 5px;font-size:28rpx;}
+.doct-li .d-l-body .d-l-b-content{font-size: 28rpx;line-height: 40rpx;color: #666;background-image:url(http://hfyx.yzw0525.com/images/icon/icon_doctor_list_description_bg.jpg?1);background-position: left top;background-repeat:no-repeat;background-size: cover;padding: 10rpx 20rpx 30rpx;}
+.doct-li .d-l-body .d-l-b-content .good_at_name{font-size: 30rpx;color: #937343;}
+.doct-li .d-l-body .d-l-b-content .good_at_content{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;}
+.doct-li .d-l-body .d-l-b-btn{height:80rpx;line-height:80rpx;}
+.doct-li .d-l-body .d-l-b-btn navigator{display: block;width: 45%;margin: 10rpx 2.5%;float: left;line-height: 80rpx;text-align: center;color: #fff;font-size: 30rpx;}
+.doct-li .d-l-body .d-l-b-btn navigator.ysxq{background-color:#000;}
+.doct-li .d-l-body .d-l-b-btn navigator.yygh{background-color:#937343;}

@@ -1,0 +1,14 @@
+/* pages/project/projectinfos/projectinfos.wxss */
+.projectinfos{margin: 0 auto 10rpx;padding: 0 3%;}
+.projectinfos .projecttitle{font-size: 30rpx;color: #333;line-height: 40rpx;}
+.projectinfos .description{font-size: 28rpx;color: #666;margin-top: 15rpx;line-height: 35rpx;}
+.projectinfos .infos{margin: 15rpx auto;font-size: 28rpx;color: #ccc;}
+.projectinfos .infos view{display: inline-block;}
+.projectinfos .infos view.price{color:#937343;margin-right: 20rpx;}
+.projectinfos .infos view.original_price{text-decoration:line-through;}
+.projectinfos .infos view.browse_num{float: right;}
+
+.project_content {margin-bottom: 110rpx;}
+.project_content .title{color: #888;padding-left: 80rpx;}
+.project_content .title::before{background-image:url(http://hfyx.yzw0525.com/images/icon/icon_project_content.png);background-size: 120% auto; }
+.project_content .content{padding: 0 3% 20rpx;}

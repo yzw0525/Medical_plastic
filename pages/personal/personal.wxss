@@ -1,0 +1,16 @@
+/* pages/user/user.wxss */
+.user_head{width: 100%;overflow: hidden;position: relative;}
+.user_head .nickface{width: 130rpx;height: 130rpx; position: absolute;top: 50%;left: 3%;margin-top: -65rpx;border-radius: 65rpx;overflow: hidden;}
+.user_head .nickface image{max-width: 100%;max-height: 100%;}
+.user_head .nickname{color: #fff;font-size: 28rpx;height: 40rpx;position: absolute;top: 50%;left: 3%;margin-top: -10rpx;margin-left: 150rpx;}
+.Personal{background-color: #fff;padding: 0 4%;margin-top: 20rpx;}
+.Personal .PersonalLi{line-height: 80rpx;font-size: 30rpx;color: #555;position: relative; border-bottom:1px solid #eeeeee;padding-left:50rpx;}
+.Personal .PersonalLi::after{content: "";width: 25rpx;height: 25rpx;position: absolute;right: 0;top: 50%;margin-top: -12.5rpx; border-width: 2px 2px 0 0;border-color: #C8C8CD;border-style: solid;transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);}
+.Personal .PersonalLi::before{content: "";width: 50rpx;height: 50rpx;position: absolute;left: 0;top: 50%;margin-top: -23rpx;background-position: center;background-size:80% auto;background-repeat: no-repeat;}
+
+.Personal .PersonalLi.register::before{background-image: url(http://hfyx.yzw0525.com/images/icon/icon_online_register.png?1);}
+.Personal .PersonalLi.coupon::before{background-image: url(http://hfyx.yzw0525.com/images/icon/icon_online_coupon.png?1);}
+.Personal .PersonalLi.message::before{background-image: url(http://hfyx.yzw0525.com/images/icon/icon_online_message.png?1);}
+.Personal .PersonalLi.share::before{background-image: url(http://hfyx.yzw0525.com/images/icon/icon_online_share.png?1);background-size:77% auto;}
+.Personal .PersonalLi.customer_service::before{background-image: url(http://hfyx.yzw0525.com/images/icon/icon_online_customer_service.png?1);background-size:85% auto;}
+.Personal .PersonalLi.customer_service .tel{float: right;margin-right: 5%;color: #999999;}

@@ -1,0 +1,73 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/search/search",
+    "pages/about/about",
+    "pages/online/online",
+    "pages/recommend/recommend",
+    "pages/share/share",
+
+    "pages/case/case",
+    "pages/case/caseinfos/caseinfos",
+
+    "pages/project/project",
+    "pages/project/projectinfos/projectinfos",
+    
+    "pages/personal/personal",
+    "pages/personal/myregister/myregister",
+    "pages/personal/coupon/coupon",
+    "pages/personal/mymsg/mymsg",
+
+    "pages/user/rights/rights",
+    "pages/user/login/login",
+    "pages/user/authorization/authorization",
+    "pages/user/reset/reset",
+    "pages/user/register/register",
+    "pages/user/interest/interest",
+    
+
+    "pages/activity/invitation/invitation",
+    "pages/activity/details/details",
+
+    "pages/doct/doctlist/doctlist",
+    "pages/doct/doctinfo/doctinfo"
+    
+  ],
+  "window": {
+    "navigationBarTitleText": "合肥艺星医疗美容",
+    "navigationBarBackgroundColor":"#937343",
+    "navigationBarTextStyle":"white",
+    "backgroundColor":"#f5f5f5"
+  },
+  "tabBar": {
+    "color":"#999999",
+    "selectedColor":"#937343",
+    "backgroundColor":"white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath":"./icon/icon_home.png",
+        "selectedIconPath":"./icon/icon_home_selected.png",
+        "text": "首 页"
+      },
+      {
+        "pagePath": "pages/project/project",
+        "iconPath": "./icon/icon_project.png",
+        "selectedIconPath": "./icon/icon_project_selected.png",
+        "text": "项 目"
+      },
+      {
+        "pagePath": "pages/online/online",
+        "iconPath": "./icon/icon_ordered.png",
+        "selectedIconPath": "./icon/icon_ordered_selected.png",
+        "text": "预 约"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "iconPath": "./icon/icon_personal.png",
+        "selectedIconPath": "./icon/icon_personal_selected.png",
+        "text": "我 的"
+      }
+    ]
+  }
+}

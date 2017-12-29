@@ -1,0 +1,15 @@
+/* pages/about/about.wxss */
+image{margin: 0;padding: 0;display: block;}
+.equipment_scroll{width: 100%; height: 600rpx;overflow: hidden;padding: 50rpx 0; background-color: #fff; white-space: nowrap;}
+.equipment_scroll .equipment_item{width: 40%; height: 100%;border:solid #ccc 2px; margin: 0 10rpx;box-sizing: unset; display: inline-block;position: relative;}
+
+.equipment_scroll .equipment_item .item_title{display: block; width: 100%; line-height: 60rpx;text-align: center; background-color:#cccccc; color: #333333; overflow: hidden;position: absolute;bottom: 100rpx;}
+
+.environment{height: 1000rpx;position: relative;}
+.environment swiper{height: 100%;}
+.environment_nav{width: 40%;height: 60%;padding: 20rpx;color: #fff; background-color: rgba(0, 0, 0, .8);position: absolute;top: 15%;right: 0;z-index: 9;}
+.environment_nav .h3{font-size: 40rpx;}
+.environment_nav .h4{font-size: 36rpx;line-height: 80rpx;}
+.environment_nav .environment_nav_list{border-bottom: 2px solid #ccc; padding: 15rpx 0 30rpx;line-height: 50rpx;}
+.environment_nav .environment_nav_list .active{zoom: 1.2;}
+.environment_nav .environment_nav_bottom{font-size: 32rpx;text-align: right;line-height: 80rpx;}

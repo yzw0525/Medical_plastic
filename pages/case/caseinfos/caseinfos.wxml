@@ -1,0 +1,13 @@
+<!--pages/case/caseinfos/caseinfos.wxml-->
+<view class='caseinfos'>
+  <view class='caseinfos_head'>{{case_title}}</view>
+  <image src='{{imgpath}}caseinfos_head.jpg' mode='widthFix'></image>
+  <view class='caseinfos_content'>
+    <import src="../../Common/wxParse/wxParse.wxml"/>
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+  </view>
+</view>
+<import src="/pages/Template/BottomNavigation.wxml"/>
+<template is="BottomNavigation" data="{{projectType}}"/>
+<import src="/pages/Template/zx_right.wxml"/>
+<template is="zx_right" data=""/>

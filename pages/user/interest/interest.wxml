@@ -1,0 +1,12 @@
+<!--pages/user/interest/interest.wxml-->
+<image src="{{litpic}}"  mode='widthFix'></image>
+<view class='main activity_content'>
+  <view class='title'>权益说明：</view>
+  <view class='content'>
+    <import src="../../Common/wxParse/wxParse.wxml"/>
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+  </view>
+</view>
+<view wx:if="{{couponid>0}}" bindtap='receiveCoupon' data-couponid='{{couponid}}' class="btn_receive">立即领取</view>
+<import src="/pages/Template/BottomNavigation.wxml"/>
+<template is="BottomNavigation" data="{{activityType}}"/>

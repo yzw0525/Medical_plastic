@@ -1,0 +1,7 @@
+<!--doctinfo.wxml-->
+<view class='doctinfo'>
+  <import src="../../Common/wxParse/wxParse.wxml"/>
+  <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>
+<import src="/pages/Template/zx_right.wxml"/>
+<template is="zx_right" data=""/>

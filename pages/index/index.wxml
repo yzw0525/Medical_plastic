@@ -1,0 +1,112 @@
+<view class="search-bar" id="searchBar">
+  <navigator url="/pages/search/search" open-type='navigate' class="search-bar" hover-class='none'>
+    <i class="icon-search"></i>
+    <input type="text" class="search-input" placeholder="请输入您要搜索的商品或案例" />
+  </navigator>
+  <button open-type="contact" class="search-contact"></button>
+</view>
+<swiper class='banner' indicator-dots="true" indicator-color="rgba(255, 255, 255, .8)" indicator-active-color="#937343" autoplay="true">
+  <swiper-item>
+    <image src='{{imgpath}}banner_01.jpg' mode='widthFix'></image>
+  </swiper-item>
+  <swiper-item>
+    <image src='{{imgpath}}banner_01.jpg' mode='widthFix'></image>
+  </swiper-item>
+  <swiper-item>
+    <image src='{{imgpath}}banner_01.jpg' mode='widthFix'></image>
+  </swiper-item>
+</swiper>
+<view class='nav-btn'>
+  <navigator url='/pages/case/case' class='zzal' hover-class='none'>
+    <text>专家案例</text>
+  </navigator>
+  <navigator url='/pages/user/rights/rights' class='hyqy' hover-class='none'>
+    <text>会员权益</text>
+  </navigator>
+  <navigator url="/pages/about/about" class='gyyx' hover-class='none'>
+    <text>关于艺星</text>
+  </navigator>
+  <navigator url='/pages/online/online' open-type='switchTab' class='zxyy' hover-class='none'>
+    <text>在线预约</text>
+  </navigator>
+</view>
+<view class='activity'>
+  <view class='activity_li'>
+    <view class='a_li_left'>
+      <view class='title'>邀好友变美</view>
+      <view class='description'>已有455人参加</view>
+      <navigator url="/pages/activity/invitation/invitation" class="a_li_nav" hover-class='none'>了解详情</navigator>
+    </view>
+    <view class='a_li_right'>
+      <image src='{{imgpath}}activity01.jpg' mode='widthFix'></image>
+    </view>
+  </view>
+  <view class='activity_li'>
+    <view class='a_li_left'>
+      <view class='title'>新用户福利</view>
+      <view class='description'>五大免费项目</view>
+      <navigator url='/pages/user/interest/interest?aid=11' class="a_li_nav" hover-class='none'>点击查看</navigator>
+    </view>
+    <view class='a_li_right'>
+      <image src='{{imgpath}}activity02.jpg' mode='widthFix'></image>
+    </view>
+  </view>
+</view>
+<navigator url='/pages/doct/doctlist/doctlist' class='main doctor' hover-class='none'>
+  <view class='title'>艺星专家
+    <view class='more'>更多 >></view>
+  </view>
+  <image src='{{imgpath}}index_doctor.jpg?' mode='widthFix'></image>
+</navigator>
+<view class='main recommend'>
+  <navigator url='/pages/recommend/recommend' class='title' hover-class='none'>爆款推荐
+    <view class='more'>更多 >></view>
+  </navigator>
+  <view class='recommend-body'>
+    <navigator url='/pages/recommend/recommend' hover-class='none'>
+      <image src='{{imgpath}}index_recommend.jpg?' mode='widthFix'></image>
+    </navigator>
+    <scroll-view wx:if="{{recommendProjectList}}" class="recommend_scroll" scroll-x>
+      <block wx:for="{{recommendProjectList}}" wx:for-item="recommend" wx:for-index="recommend_index" wx:key="*.this">
+      <navigator url='/pages/project/projectinfos/projectinfos?projectid={{recommend.id}}' hover-class='none' class="recommend_item">
+        <view class="item_image">
+          <image src='{{recommend.pic_list}}' mode='aspectFit'></image>
+        </view>
+        <text class="item_title">{{recommend.title}}</text>
+        <view class="item_price">¥ {{recommend.price}}
+          <text>¥ {{recommend.oprice_price}}</text>
+        </view>
+      </navigator>
+      </block>
+    </scroll-view>
+  </view>
+</view>
+<view class='main case'>
+  <navigator url='/pages/case/case' class='title' hover-class='none'>专家案例
+    <view class='more'>更多 >></view>
+  </navigator>
+  <view class='case_body'>
+    <view class='case_li clear' wx:for="{{case_list}}" wx:for-item="caselist" wx:for-index="caseindex" wx:key="*.this">
+      <navigator url='/pages/case/caseinfos/caseinfos?caseid={{caselist.id}}' hover-class='none' class='case-image'>
+        <view class='img-l'>
+          <label>术前</label>
+          <image src='{{caselist.cover_front}}' mode='widthFix'></image>
+        </view>
+        <view class='img-r'>
+          <label>术前</label>
+          <image src='{{caselist.cover_after}}' mode='widthFix'></image>
+        </view>
+      </navigator>
+      <navigator url='/pages/case/caseinfos/caseinfos?caseid={{caselist.id}}' hover-class='none' class='case-title'>{{caselist.case_title}}</navigator>
+      <view class='times'>
+        <label style="margin-right:15rpx;">手术时间</label>{{caselist.operation_time}}</view>
+      <view class='read_num clear'>{{caselist.clicks}}</view>
+    </view>
+    <!-- case_li end -->
+  </view>
+  <!-- case_body end -->
+</view>
+<!-- case end -->
+<view wx:if="{{!is_more}}" class="loadnull"><text class='f5'>暂无更多案例</text></view>
+<import src="/pages/Template/zx_right.wxml"/>
+<template is="zx_right" data=""/>

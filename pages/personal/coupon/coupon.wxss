@@ -1,0 +1,18 @@
+/* pages/Personal/coupon/coupon.wxss */
+.coupon_head{width: 94%;margin:20rpx auto 2rpx;padding:15rpx 5%; background-color: #fff;line-height: 60rpx;display:flex;justify-content: space-between;flex-wrap: wrap;}
+.coupon_head>view{width: 30%;text-align: center; font-size: 30rpx;}
+.coupon_head>view.active{border-bottom: solid #937343 2px;color: #937343;}
+
+.coupon_li{width: 94%;margin:0rpx auto 10rpx;padding:20rpx 20rpx 20rpx; background-color: #fff;color: #333;}
+.coupon_li .c_title{font-size: 30rpx;line-height: 50rpx;}
+.coupon_li .c_attribute{line-height: 60rpx;border-bottom: dashed #999 1px;}
+.coupon_li .c_date{font-size: 24rpx;color: #666;float:left;}
+.coupon_li .c_price{font-size: 30rpx;color: #937343;float: right;}
+.coupon_li .c_rule{margin-top: 20rpx;position: relative;}
+.coupon_li .c_r_head{font-size: 30rpx;color: #937343;line-height: 60rpx;}
+.coupon_li .c_state{position: absolute;right: 0rpx;top: 0rpx;background-color: #000;color: #fff;line-height: 60rpx;padding: 0 15rpx;border-radius: 10rpx;font-size: 30rpx;}
+.coupon_li .c_state.already,.coupon_li .c_state.overdue{background-color: #888;}
+.coupon_li .c_r_content{height: 0;overflow: hidden; font-size: 26rpx;color: #666;line-height: 40rpx;}
+
+.coupon_null{width: 300rpx;height: 300rpx;max-width: 250px;max-height: 250px; margin: auto;background-position: center;background-size: 80% auto;background-repeat: no-repeat;background-image: url(http://hfyx.yzw0525.com/images/icon/coupon_null.png);position: relative;}
+.coupon_null::after{content: "暂无代金券";width: 100%;position: absolute;bottom: 0;text-align: center;color: #bbb;font-size: 30rpx;}

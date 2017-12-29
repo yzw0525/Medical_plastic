@@ -1,0 +1,22 @@
+<!--pages/project/projectinfos/projectinfos.wxml-->
+<image src="{{pic_head}}"  mode='widthFix'></image>
+<view class='main projectinfos'>
+  <view class='projecttitle'>{{title}}</view>
+  <view class='description'>{{description}}</view>
+  <view class='infos'>
+    <view class='price'>￥{{price}}</view>
+    <view class='original_price'>￥{{oprice_price}}</view>
+    <view class='browse_num'>{{clicks}}人预约</view>
+  </view>
+</view>
+<view class='main project_content'>
+  <view class='title'>商品详情</view>
+  <view class='content'>
+    <import src="../../Common/wxParse/wxParse.wxml"/>
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+  </view>
+</view>
+<import src="/pages/Template/BottomNavigation.wxml"/>
+<template is="BottomNavigation" data="{{projectType}}"/>
+<import src="/pages/Template/zx_right.wxml"/>
+<template is="zx_right" data=""/>

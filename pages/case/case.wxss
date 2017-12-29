@@ -1,0 +1,10 @@
+/* pages/case/case.wxss */
+.case{background:none;}
+.case_body{width: 100%;padding: 10rpx 3%; background-color: #fff;}
+.case_body .case_li{border:solid #dddddd 1px;border-radius: 10rpx;padding: 20rpx;margin:10rpx auto;}
+.case_body .case_li .case-image{display:flex;justify-content:space-between;flex-wrap:wrap;}
+.case-image > view{width: 49%;position: relative;}
+.case-image > view label{position: absolute;left: 0;bottom: 25rpx;font-size: 30rpx; color: #fff;background-color: rgba(3, 3, 3, .4);padding:0 15rpx;letter-spacing: 15rpx;border-top-right-radius: 10rpx;border-bottom-right-radius: 10rpx;}
+.case_body .case_li .case-title{font-size: 26rpx;color: #333;line-height: 50rpx;}
+.case_body .case_li .times,.case_body .case_li .read_num{width: 50%;line-height: 40rpx;float: left;color: #888888;}
+.case_body .case_li .read_num{width: auto; float: right;padding-left: 50rpx;background-image: url(http://hfyx.yzw0525.com/images/icon/icon_index_read_num.svg);background-size: auto 100%;background-position: left center;background-repeat: no-repeat;}

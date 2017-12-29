@@ -1,0 +1,4 @@
+<!--pages/activity/invitation/invitation.wxml-->
+<image src='{{imgpath}}activity_invitation.jpg' mode='widthFix'></image>
+<import src="/pages/Template/zx_right.wxml"/>
+<template is="zx_right" data=""/>

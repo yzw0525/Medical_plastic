@@ -1,0 +1,20 @@
+<!--pages/personal/mymsg/mymsg.wxml-->
+<wxs src="../../Common/Common.wxs" module="Common" />
+<view class='main mymsg'>
+  <block wx:for="{{msg_list}}" wx:for-item="list" wx:for-index="index" wx:key="*.this" >
+  <navigator url='/pages/project/projectinfos/projectinfos?projectid={{list.id}}' class='mymsg_li clear'>
+    <view class='mymsg-image'>
+      <image src='{{imgpath}}icon/yestar.png' mode='widthFix'></image>
+    </view>
+    <view class='mymsg-content'>
+      <view class='mymsg-title'>{{list.title}}</view>
+      <view class='mymsg-time'>{{Common.formatTime(list.created_at)}}</view>
+    </view>
+  </navigator>
+  </block>
+  <!-- mymsg_li end -->
+  <view wx:if="{{!is_more}}" class="loadnull"><text>暂无数据</text></view>
+</view>
+<!-- mymsg end -->
+<import src="/pages/Template/zx_right.wxml"/>
+<template is="zx_right" data=""/>

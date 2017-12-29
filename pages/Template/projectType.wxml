@@ -1,0 +1,18 @@
+<!--projectType-->
+<template name="projectType">
+  <view class='main btn-list'>
+    <view  bindtap='setprojectType' data-typeid="all" class='all active'><text>全部</text></view>
+    <view  bindtap='setprojectType' data-typeid="933" class='eye'><text>眼部</text></view>
+    <view  bindtap='setprojectType' data-typeid="934" class='nose'><text>鼻部</text></view>
+    <view  bindtap='setprojectType' data-typeid="935" class='chest'><text>胸部</text></view>
+    <view  bindtap='setprojectType' data-typeid="936" class='face'><text>脸型</text></view>
+    <view  bindtap='setprojectType' data-typeid="937" class='thin'><text>瘦身</text></view>
+    <view  bindtap='setprojectType' data-typeid="938" class='rhytidectomy'><text>除皱</text></view>
+    <view  bindtap='setprojectType' data-typeid="939" class='shaping'><text>塑形</text></view>
+    <view  bindtap='setprojectType' data-typeid="940" class='beauty-freckle'><text>美肤祛斑</text></view>
+    <view  bindtap='setprojectType' data-typeid="941" class='cosmetology'><text>皮肤美容</text></view>
+    <view  bindtap='setprojectType' data-typeid="942" class='tattoo'><text>纹绣美容</text></view>
+    <view  bindtap='setprojectType' data-typeid="943" class='oral-cavity'><text>口腔中心</text></view>
+  </view>
+</template>
+<!--projectType end-->

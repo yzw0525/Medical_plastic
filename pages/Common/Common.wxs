@@ -1,0 +1,71 @@
+/** 加减乘除运算 **/
+/** 加 **/
+function addition(a, b) {
+  var c, d, e;
+    c = a.toString().split(".")[1] == undefined ? 0 : a.toString().split(".")[1].length;
+    d = b.toString().split(".")[1] == undefined ? 0 : b.toString().split(".")[1].length;
+  return e = Math.pow(10, Math.max(c, d)), (multiply(a, e) + multiply(b, e)) / e;
+}
+/** 减 **/
+function subtraction(a, b) {
+  var c, d, e;
+  c = a.toString().split(".")[1] == undefined ? 0 : a.toString().split(".")[1].length;
+  d = b.toString().split(".")[1] == undefined ? 0 : b.toString().split(".")[1].length;
+  return e = Math.pow(10, Math.max(c, d)), (multiply(a, e) - multiply(b, e)) / e;
+}
+/** 乘 **/
+function multiply(a, b) {
+  var c = 0,
+    d = a.toString(),
+    e = b.toString();
+    c += d.split(".")[1] == undefined ? 0 : d.split(".")[1].length;
+    c += e.split(".")[1] == undefined ? 0: e.split(".")[1].length;
+    return parseInt(d.replace(".", "")) * parseInt(e.replace(".", "")) / Math.pow(10, c);
+}
+/** 除 **/
+function division(a, b) {
+  var c, d, e = 0,
+    f = 0;
+  e = a.toString().split(".")[1] == undefined ? 0 : a.toString().split(".")[1].length;
+  f = b.toString().split(".")[1] == undefined ? 0 : b.toString().split(".")[1].length;
+  c = parseInt(a.toString().replace(".", ""))
+  d = parseInt(b.toString().replace(".", ""))
+  
+  return multiply(c / d, Math.pow(10, f - e));
+}
+/** 加减乘除运算 end**/
+/** 格式化时间戳 **/
+function formatTime(timestamp, strFormat=0) {
+  // 声明变量。
+  var times, resultData;
+  // 创建 Date 对象。
+  times = getDate(parseInt(timestamp) * 1000);
+  var year = times.getFullYear();
+  var month = ("0" + (times.getMonth() + 1)).slice(-2);
+  var day = ("0" + times.getDate()).slice(-2);
+  var hr = ("0" + times.getHours()).slice(-2);
+  var min = ("0" + times.getMinutes()).slice(-2);
+  var sec = ("0" + times.getSeconds()).slice(-2);
+  switch (strFormat) {
+    case 1:
+      resultData = year + "-" + month + "-" + day
+      break;
+    case 2:
+      resultData = year + "-" + month + "-" + day + " " + hr + ":" + min
+      break;
+    case 3:
+      resultData = hr + ":" + min + ":" + sec
+      break;
+    default:
+      resultData = year + "-" + month + "-" + day + " " + hr + ":" + min + ":" + sec
+      break;
+  }
+  return resultData;
+}
+module.exports = {
+  addition    : addition,
+  subtraction : subtraction,
+  multiply    : multiply,
+  division    : division,
+  formatTime  : formatTime
+};

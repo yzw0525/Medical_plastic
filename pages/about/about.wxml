@@ -1,0 +1,88 @@
+<!--pages/about/about.wxml-->
+<image src='{{imgpath}}about_01.jpg' mode='widthFix'></image>
+<image src='{{imgpath}}about_02.jpg' mode='widthFix'></image>
+<image src='{{imgpath}}about_03.jpg' mode='widthFix'></image>
+<image src='{{imgpath}}about_04.jpg' mode='widthFix'></image>
+<image src='{{imgpath}}about_05.jpg' mode='widthFix'></image>
+<image src='{{imgpath}}about_06.jpg' mode='widthFix'></image>
+<image src='{{imgpath}}about_07.jpg' mode='widthFix'></image>
+<image src='{{imgpath}}about_08.jpg' mode='widthFix'></image>
+<image src='{{imgpath}}about_09.jpg' mode='widthFix'></image>
+<image src='{{imgpath}}about_10.jpg' mode='widthFix'></image>
+<image src='{{imgpath}}about_11.jpg' mode='widthFix'></image>
+<image src='{{imgpath}}about_12.jpg' mode='widthFix'></image>
+<image src='{{imgpath}}about_13.jpg' mode='widthFix'></image>
+<image src='{{imgpath}}about_14.jpg' mode='widthFix'></image>
+<image src='{{imgpath}}about_15.jpg' mode='widthFix'></image>
+<image src='{{imgpath}}about_16.jpg' mode='widthFix'></image>
+<scroll-view class="equipment_scroll" scroll-x >
+  <view class="equipment_item">
+    <view class="item_image"><image src='{{imgpath}}about_equipment_01.jpg?1' mode='widthFix'></image></view>
+    <text class="item_title">OPT王者风范美肤仪</text>
+  </view>
+  <view class="equipment_item">
+    <view class="item_image"><image src='{{imgpath}}about_equipment_02.jpg?1' mode='widthFix'></image></view>
+    <view class="item_title">RF深蓝射频治疗仪</view>
+  </view>
+  <view class="equipment_item">
+    <view class="item_image"><image src='{{imgpath}}about_equipment_03.jpg?' mode='widthFix'></image></view>
+    <view class="item_title">飞顿二号复合彩光</view>
+  </view>
+  <view class="equipment_item">
+    <view class="item_image"><image src='{{imgpath}}about_equipment_04.jpg?' mode='widthFix'></image></view>
+    <view class="item_title">华尔兹冰点脱毛系统</view>
+  </view>
+  <view class="equipment_item">
+    <view class="item_image"><image src='{{imgpath}}about_equipment_05.jpg?' mode='widthFix'></image></view>
+    <view class="item_title">辉煌激光360嫩肤仪</view>
+  </view>
+  <view class="equipment_item">
+    <view class="item_image"><image src='{{imgpath}}about_equipment_06.jpg?' mode='widthFix'></image></view>
+    <view class="item_title">塑美极抗衰除皱系统</view>
+  </view>
+  <view class="equipment_item">
+    <view class="item_image"><image src='{{imgpath}}about_equipment_07.jpg?' mode='widthFix'></image></view>
+    <view class="item_title">像束激光治疗仪</view>
+  </view>
+  <view class="equipment_item">
+    <view class="item_image"><image src='{{imgpath}}about_equipment_08.jpg?' mode='widthFix'></image></view>
+    <view class="item_title">意大利Plasma激光溶脂仪</view>
+  </view>
+</scroll-view>
+<view class='environment'>
+  <view class="environment_nav">
+    <view class='h3'>Environment</view>
+    <view class='h4'>艺星环境</view>
+    <view class='environment_nav_list'>
+      <view bindtap='setEnvironmentIndex' class='{{environment_index==0?"active":""}}' data-environment_index='0'>医院外景</view>
+      <view bindtap='setEnvironmentIndex' class='{{environment_index==1?"active":""}}' data-environment_index='1'>大厅</view>
+      <view bindtap='setEnvironmentIndex' class='{{environment_index==2?"active":""}}' data-environment_index='2'>住院部</view>
+      <view bindtap='setEnvironmentIndex' class='{{environment_index==3?"active":""}}' data-environment_index='3'>诊疗室</view>
+      <view bindtap='setEnvironmentIndex' class='{{environment_index==4?"active":""}}' data-environment_index='4'>导医台</view>
+      <view bindtap='setEnvironmentIndex' class='{{environment_index==5?"active":""}}' data-environment_index='5'>休息区</view>
+    </view>
+    <view class='environment_nav_bottom'>Yestar</view>
+  </view>
+  <swiper duration="1000" bindchange="changeEnvironment" current="{{environment_index}}" circular="true" vertical="true">
+    <swiper-item>
+      <image src="{{imgpath}}about_environment_01.jpg?" class="slide-image" mode='widthFix'/>
+    </swiper-item>
+    <swiper-item>
+      <image src="{{imgpath}}about_environment_01.jpg?" class="slide-image" mode='widthFix'/>
+    </swiper-item>
+    <swiper-item>
+      <image src="{{imgpath}}about_environment_01.jpg?" class="slide-image" mode='widthFix'/>
+    </swiper-item>
+    <swiper-item>
+      <image src="{{imgpath}}about_environment_01.jpg?" class="slide-image" mode='widthFix'/>
+    </swiper-item>
+    <swiper-item>
+      <image src="{{imgpath}}about_environment_01.jpg?" class="slide-image" mode='widthFix'/>
+    </swiper-item>
+    <swiper-item>
+      <image src="{{imgpath}}about_environment_01.jpg?" class="slide-image" mode='widthFix'/>
+    </swiper-item>
+</swiper>
+</view>
+<import src="/pages/Template/zx_right.wxml"/>
+<template is="zx_right" data=""/>

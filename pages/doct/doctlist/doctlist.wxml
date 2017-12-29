@@ -1,0 +1,29 @@
+<!--doctlist.wxml-->
+<import src="/pages/Template/projectType.wxml"/>
+<template is="projectType" data=""/>
+<view class="doctlist clear">
+  <view class="doct-li" wx:for="{{doctlist}}" wx:for-item="item" wx:for-index='index' wx:key="*.this">
+    <view class="d-l-face"><image src="{{item.doctorface}}" mode='widthFix'></image></view>
+    <view class="d-l-body clear">
+      <view class="d-l-b-head clear">
+        <view class="d-l-b-h-name">{{item.doctorName}}</view>
+        <view class="d-l-b-h-shorttitle">（{{item.doctorTitle}}）</view>
+      </view>
+      <view class="d-l-b-content">
+        <view class='good_at_name'>擅长项目：</view> 
+        <view class='good_at_content'>{{item.doctorSkill}}</view> 
+        <view class="d-l-b-btn">
+          <navigator url="/pages/doct/doctinfo/doctinfo?doctorid={{item.id}}" class="ysxq" open-type="navigate" hover-class="none">查看详情</navigator>
+          <navigator url="/pages/online/online?docttype={{item.docttype}}&doctorid={{item.id}}" class="yygh" open-type="navigate" hover-class="none">立即预约</navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--doct-li end-->
+  <view style="clear: both;"></view>
+</view>
+<!--doctlist end-->
+<view bindtap="onLoadMoreDoctList" wx:if="{{is_more}}" class="load_more">查看更多</view>
+<view wx:if="{{!is_more}}" class="loadnull"><text class='f5'>暂无数据</text></view>
+<import src="/pages/Template/zx_right.wxml"/>
+<template is="zx_right" data=""/>

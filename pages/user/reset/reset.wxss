@@ -1,0 +1,13 @@
+/* pages/user/reset/reset.wxss */
+page{background-color: #fff;}
+.Myfrom{width: 80%;margin: 60rpx auto;}
+.Myfrom .form-text{border-bottom: #eeeeee solid 1px;height: 80rpx;line-height: 80rpx;margin: 10rpx auto;padding-left: 70rpx;background-position:left center;background-repeat: no-repeat;background-size:auto 90% ;}
+.Myfrom .form-text.phone{background-image: url(http://hfyx.yzw0525.com/images/icon/icon_phone.png);}
+.Myfrom .form-text.verification{background-image: url(http://hfyx.yzw0525.com/images/icon/icon_verification.png);position: relative;}
+.Myfrom .form-text.password{background-image: url(http://hfyx.yzw0525.com/images/icon/icon_password.png);}
+.Myfrom .form-text input{width: 100%;height: 100%;}
+
+.Myfrom .form-text.verification .get_verification{display: inline-block;position: absolute;right: 20rpx;top: 0;color: #937343;text-decoration: underline;}
+.Myfrom .form-text.verification .get_verification.again{color: #888888;}
+
+.form-submit{width: 60%;height: 90rpx;line-height: 90rpx;border-radius: 40rpx;border: none;background-color: #937343;font-size: 32rpx;color: #fff;letter-spacing: 15rpx;}

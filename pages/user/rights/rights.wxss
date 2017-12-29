@@ -1,0 +1,24 @@
+/* pages/user/rights/rights.wxss */
+.exclusive .title,.activity .title{height:80rpx;line-height:80rpx;
+padding: 0 3%;}
+.exclusive .title .describe,.activity .title .describe{display:inline-block; width: auto; color: #999;font-size: 26rpx;}
+.exclusive_box{width: 100%;max-width: 750px; margin:auto; display: flex;justify-content: space-between;flex-wrap: wrap;}
+.exclusive_lattice{width: 33.333%;height: 220rpx;border-top: #dddddd solid 1px;border-right: #dddddd solid 1px;position: relative;}
+.exclusive_lattice::before{content:"";width: 120rpx;height: 120rpx;position: absolute;top: 0rpx;left: 50%;margin-left: -60rpx;background-size: 100%;background-repeat: no-repeat;background-position: center;border-radius: 50rpx;}
+.exclusive_lattice.testing,.exclusive_lattice.lunch,.exclusive_lattice.referral{border-right:none;}
+.exclusive_lattice .title,.exclusive_lattice .describe{width: 100%;height: 40rpx;line-height: 40rpx; text-align: center;position: absolute;bottom: 65rpx;font-size: 28rpx;}
+.exclusive_lattice .describe{bottom: 25rpx;color: #999;font-size: 24rpx;}
+.exclusive_lattice.experience::before{background-image: url(http://hfyx.yzw0525.com/images/icon/icon_rights_experience.png?);}
+.exclusive_lattice.coffee::before{background-image: url(http://hfyx.yzw0525.com/images/icon/icon_rights_coffee.png?);}
+.exclusive_lattice.testing::before{background-image: url(http://hfyx.yzw0525.com/images/icon/icon_rights_testing.png?);}
+.exclusive_lattice.birthday::before{background-image: url(http://hfyx.yzw0525.com/images/icon/icon_rights_birthday.png?);}
+.exclusive_lattice.discount::before{background-image: url(http://hfyx.yzw0525.com/images/icon/icon_rights_discount.png?);}
+.exclusive_lattice.lunch::before{background-image: url(http://hfyx.yzw0525.com/images/icon/icon_rights_lunch.png?);}
+.exclusive_lattice.parking::before{background-image: url(http://hfyx.yzw0525.com/images/icon/icon_rights_parking.png?);}
+.exclusive_lattice.shuttle::before{background-image: url(http://hfyx.yzw0525.com/images/icon/icon_rights_shuttle.png?);}
+.exclusive_lattice.referral::before{background-image: url(http://hfyx.yzw0525.com/images/icon/icon_rights_referral.png?);}
+
+.activity_list{width: 100%;margin: 10rpx auto; position: relative;}
+.activity_list image{margin-bottom: -5rpx;}
+.activity_list .title{width: 100%;height:100%;padding:0;position: absolute;left: 0;top: 0;background-color: rgba(3, 3, 3, .4);color: #fff;font-size: 30rpx;line-height: 50rpx; text-align: center;display: flex; justify-content: center; flex-direction: column;}
+.activity_list .title .describe{display: block;color: #fff;font-size: 26rpx;line-height: 40rpx;}
