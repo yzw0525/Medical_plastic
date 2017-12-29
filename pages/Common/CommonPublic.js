@@ -183,8 +183,8 @@ function in_array(search, array) {
   return false;
 }
 function sign() {
-  var VERIFICATION = "AyCxV01vBK5VoU2tWg1hwo12LuZxCW8D"
-  var privateKey_pkcs1 = '-----BEGIN RSA PRIVATE KEY-----  MIICXAIBAAKBgQCKDYgYAXSMki1xQC3nRUql6pWhCYJ25XlQCpirIukTriCO27Rr  8yK8R4yhniLFks/ JcXZcwlNhfqCupUs + PM3xixOkUMtbsoa + Ks36P / D1sC81TAxZ  4VHSrG00c2uPKftJtPCz3wsWPK4uwUJtBDdr/ YGSFCSUs47XCgnMhKnqQwIDAQAB  AoGAQr + OKMUzW / AlhpdYWnS3RgdpN0aIzQHgqOGmtUAY34oWddwmnPceuVgC1 / XE  rDByxNxWNT1D4WS / PhHvknUFwWIRev7HhbV7x9bqwaVzhD7rrcNKiV6x6mjHfIDG  edA7TtNbr3TANcZndtN / dVi8rNRn7gqz1qq4voBsNTc2lsECQQCOplwf5hSNRI5H    + 2NtM7lwp0+ HgyY75yWLQIyQkzX0C5dA7dXebFPsMo + 0UaTX3sA7wQNTMrkx/ QGUzcRoJ7tjAkEA98APJJZLHtDLnJQqg565K6pGvY + zNDgd7m5R3 + 3C3tn/ EbnLP1tB  Ko7bB47Al / FPuE9LUB9GVJ1aSrmbWzH7oQJAcjvi1mCn4KEf16EG9DJRtFcnpvttqNboB + W / Kx / YOwD1NTfA5weVBTdQQTSIb56gDrn4ca3TBKb5lzJYsJfwxQJBAKMyLkdpgP5Bh34S05Zz3YH33jVMDT2eoYjHvsME + VKWwsBIZKvNTrXb + EeYLyFnYZ4FDZUvpMJkDHAgp0eBO0ECQBvI7Mff3GI9fou7rhaQQKnPdUBkJSDTlxH0k5aD2YSGKGf9u0CnjwWZJWx4s + 6qBg9f55f8HuirMs7fzf+ 5IJ0=   -----END RSA PRIVATE KEY-----'
+  var VERIFICATION = "..."
+  var privateKey_pkcs1 = '-----BEGIN RSA PRIVATE KEY-----  ...   -----END RSA PRIVATE KEY-----'
   // 加签
   var sign_rsa = new RSA.RSAKey();
   sign_rsa = RSA.KEYUTIL.getKey(privateKey_pkcs1);
