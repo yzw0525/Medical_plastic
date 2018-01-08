@@ -49,11 +49,11 @@ App({
     })
   },
   globalData:{
-    urlpath: "http://hfyx.yzw0525.com",
-    VERIFICATION:"AyCxV01vBK5VoU2tWg1hwo12LuZxCW8D",
+    urlpath: "http://xxx.xxx.com",
+    VERIFICATION:"xxxxxxxxxxxxxxxx",
     limit:5,
     UserInfo:{},
-    tel: '400-060-1992',
+    tel: 'xxxxxxxx',
   },
   formatTime: function (date){
     var year = date.getFullYear()
